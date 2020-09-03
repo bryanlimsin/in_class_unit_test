@@ -14,4 +14,4 @@ def test_line_function(a, b, c): # cannot have additional brackets or parenthesi
     # Need the above to contain line_function()
     y3 = line_function((1, 2), (10, 20), 100)
     expected = 200 # I wrote my code such that it is easy predict the next variable 
-    assert y3 = expected
+    assert y3 == expected

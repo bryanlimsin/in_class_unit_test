@@ -13,5 +13,16 @@ def find_gradient(a, b):
     y2 = b[2]
     
     # find the gradient
-    m = (y2 - y1)/(x2-x1)
+    m = (y2 - y1)/(x2-x1) # Rise over run
     return m
+
+def line_function(a, b, x3):
+    
+    # get the gradient into this function from previously defined - find_gradient() function
+    gradient_m = find_gradient(a, b)
+    
+    # do predictor by the typical y = mx
+    
+    y3 = gradient_m * x3
+    
+    

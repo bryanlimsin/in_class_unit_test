@@ -26,7 +26,7 @@ import pytest
 @pytest.mark.parametrize("a, b, c, expected", [
     ((1, 2), (10, 20), 100, 200), # same as above
     ((3, 9), (10, 30), 1, 3), # expect to right
-    ((25, 100), (1, 4), 3, 11) # expect to be wrong here
+    ((25, 100), (1, 4), 3, 12)
     ])
 def test_line_function_alternative(a, b, c, expected):
     from line_predictor_module import line_function 

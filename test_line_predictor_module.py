@@ -8,10 +8,15 @@
 # Correction after I reviewed syntax of python
 # Need to use indexing within tuples and lists
 
-def test_line_function(a, b, c): # cannot have additional brackets or parenthesis within parameter but we can pre-define those
-    
+# Using method 1 that we learned in class on how to unit test a single predictor
+def test_line_function(): # cannot have additional brackets or parenthesis within parameter but we can pre-define those
+
     from line_predictor_module import line_function # Need create file called line_predictor_module.py
+    
     # Need the above to contain line_function()
+    
     y3 = line_function((1, 2), (10, 20), 100)
     expected = 200 # I wrote my code such that it is easy predict the next variable 
     assert y3 == expected
+
+    

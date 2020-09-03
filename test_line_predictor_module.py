@@ -5,7 +5,10 @@
 # Start of code
 # Write function that takes 2 tuples of x and y to predict a 3rd y given a 3rd x
 
-def test_line_function((x1, y1), (x2, y2), x3):
+# Correction after I reviewed syntax of python
+# Need to use indexing within tuples and lists
+
+def test_line_function(a, b, c): # cannot have additional brackets or parenthesis within parameter but we can pre-define those
     
     from line_predictor_module import line_function # Need create file called line_predictor_module.py
     # Need the above to contain line_function()
